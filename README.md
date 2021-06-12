@@ -1,22 +1,48 @@
 # test2task
-Test task to a new job to define skills.
+Test task to a new job to define skills. This app parced data form weather site and before recording data to the db creates this db. Or if the DB was created before this app updated the old data.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+It`s a test work without installation. Only some scripts in here such as : beautifulsoup4, pandas, sqllite3, mysql.connect, apschedular, python 3.9.0, requests.
 
 ```bash
-pip install foobar
+pip install beautifulsoup4
+pip install pandas
+pip install sqllite3
+pip install mysql.connect
+pip install apschedular
+pip install requests
+
 ```
 
 ## Usage
 
 ```python
-import foobar
+import parsing.py
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+parsing.getDataFromSiteNow() # returns dictionary with weather data
+parsing.getDataFromSite() # returns list with in a 5 days`s  weather data
+parsing.main() # returns list with all the data
+
+import datadb.py (if will use sqllite3)
+
+datadb.insertData() # returns None
+
+
+import start.py
+
+start.timeNow() # returns None
+start.main() # returns None
+
+
+import create.py(if will use mysql)
+
+create.createTable() # returns None
+
+
+import rows.py(if will use mysql)
+
+rows.createRows() # returns None
 ```
 
 ## Contributing
