@@ -24,7 +24,7 @@ parsing.getDataFromSiteNow() # returns dictionary with weather data
 parsing.getDataFromSite() # returns list with in a 5 days`s  weather data
 parsing.main() # returns list with all the data
 
-import datadb.py (if will use sqllite3)
+import datadb.py (if use sqllite3)
 
 datadb.insertData() # returns None
 
