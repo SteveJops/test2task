@@ -35,12 +35,12 @@ start.timeNow() # returns None
 start.main() # returns None
 
 
-import create.py(if will use mysql)
+import create.py(if use mysql)
 
 create.createTable() # returns None
 
 
-import rows.py(if will use mysql)
+import rows.py(if use mysql)
 
 rows.createRows() # returns None
 ```
